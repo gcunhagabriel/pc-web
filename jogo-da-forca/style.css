@@ -1,0 +1,68 @@
+* {
+  color: #222222;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo {
+  font-size: 64px;
+  font-style: italic;
+}
+
+.frase {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.letra {
+  all: unset;
+  color: #222222;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 18px;
+  font-size: 32px;
+  width: 64px;
+  padding: 3px 6px;
+}
+
+button {
+  all: unset;
+  color: #ffffff;
+  background-color: #222222;
+  border: 1px solid #cccccc;
+  border-radius: 18px;
+  font-size: 32px;
+  padding: 3px 12px;
+}
+
+#estado {
+  font-size: 48px;
+  padding-top: 32px;
+}
+
+.letras {
+  font-size: 32px;
+}
+
+.vitoria {
+  color: #1b5e20;
+}
+
+.derrota {
+  color: #b71c1c;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #444444;
+}
