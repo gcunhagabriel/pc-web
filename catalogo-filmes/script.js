@@ -55,7 +55,6 @@ function carregaFilmes() {
 
       filme["titulosSemelhantes"].forEach((semelhante) => {
         const semelhanteItem = document.createElement("li");
-        console.log(semelhante);
         semelhanteItem.textContent = getFilmePorId(semelhante)["titulo"];
         semelhantesLista.appendChild(semelhanteItem);
       });
