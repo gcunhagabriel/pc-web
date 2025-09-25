@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f0eb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #4b2e83;
+  text-align: center;
+}
+
+#cardapio,
+#carrinho {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+  width: 90%;
+  max-width: 800px;
+}
+
+#cardapio h2,
+#carrinho h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#cardapio div,
+#carrinho div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+#cardapio div:last-child,
+#carrinho div:last-child {
+  border-bottom: none;
+}
+
+#cardapio img,
+#carrinho img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-right: 20px;
+}
+
+#cardapio h3,
+#carrinho h3 {
+  flex: 1;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+#cardapio p,
+#carrinho p {
+  width: 80px;
+  text-align: right;
+  color: #222;
+  font-weight: bold;
+}
+
+button {
+  background-color: #4b2e83;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #6b49a1;
+}
+
+#carrinho p:last-child {
+  text-align: right;
+  font-size: 1.2rem;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #4b2e83;
+}
+
+@media (max-width: 600px) {
+  #cardapio div,
+  #carrinho div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #cardapio p,
+  #carrinho p {
+    width: 100%;
+    text-align: left;
+    margin-top: 5px;
+  }
+
+  #cardapio img,
+  #carrinho img {
+    margin-bottom: 10px;
+  }
+}
+
+#carrinho {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+  width: 90%;
+  max-width: 800px;
+}
+
+#carrinho h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#carrinho div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+#carrinho div:last-child {
+  border-bottom: none;
+}
+
+#carrinho h3 {
+  flex: 1;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+#carrinho p {
+  margin: 0 10px;
+  font-weight: bold;
+  color: #222;
+}
+
+#carrinho button.removerItem {
+  background-color: #4b2e83;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+#carrinho button.removerItem:hover {
+  background-color: #6b49a1;
+}
+
+#carrinho .total {
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4b2e83;
+  margin-top: 15px;
+}
